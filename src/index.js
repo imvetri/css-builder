@@ -1,8 +1,5 @@
-// Libraries.
-
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-
 
 class Index extends Component {
     constructor(props) {
@@ -10,11 +7,7 @@ class Index extends Component {
     }
 
     render() {
-        return (
-        <div>
-                hi
-            </div>
-        );
+        return <div>hi</div>;
     }
 }
 
