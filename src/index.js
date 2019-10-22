@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
-import "./style.css";
+import  "./style.css";
 
 class Index extends Component {
     constructor(props) {
@@ -11,13 +11,12 @@ class Index extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <div>Text</div>
-                    <div>
-                        <label>Color</label>
-                        <input type="text" name="color" />
-                    </div>
-                    <div>
+                <div className="option-group">
+                    <p className="option-group-label">
+                        <span className="title">Text</span>
+                        <span className="collapsed"></span>
+                    </p>
+                    <div className="content">
                         <div>Font</div>
                         <label>Color</label>
                         <input type="color" name="color" />
