@@ -14,7 +14,7 @@ class Index extends Component {
                 <div className="option-group">
                     <p className="option-group-label">
                         <span className="title">Text</span>
-                        <span className="expanded"></span>
+                        <span className="panel expanded"></span>
                     </p>
                     <div className="content">
                         <div className="option">
@@ -133,7 +133,7 @@ class Index extends Component {
                 <div className="option-group">
                     <p className="option-group-label">
                         <span className="title">Box</span>
-                        <span className="expanded"></span>
+                        <span className="panel expanded"></span>
                     </p>
                     <div className="content">
                         <div className="option">
@@ -358,7 +358,7 @@ class Index extends Component {
                     <div className="option-group">
                         <p className="option-group-label">
                             <span className="title">Layout</span>
-                            <span className="expanded"></span>
+                            <span className="panel expanded"></span>
                         </p>
                         <div className="content">
                             <label>Display</label>
