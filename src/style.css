@@ -38,7 +38,7 @@ body {
     background-color: #2C3134;
 }
 
-.collapsed {
+.expanded {
     border: 5px solid transparent;
     border-top-color: #fff;
     border-bottom-color: transparent;
@@ -51,6 +51,7 @@ body {
 }
 
 .option {
+    display:flex;
     padding: 4px 0;
     line-height: 24px;
 }

@@ -14,7 +14,7 @@ class Index extends Component {
                 <div className="option-group">
                     <p className="option-group-label">
                         <span className="title">Text</span>
-                        <span className="collapsed"></span>
+                        <span className="expanded"></span>
                     </p>
                     <div className="content">
                         <div className="option">
@@ -133,43 +133,41 @@ class Index extends Component {
                 <div className="option-group">
                     <p className="option-group-label">
                         <span className="title">Box</span>
-                        <span className="collapsed"></span>
+                        <span className="expanded"></span>
                     </p>
                     <div className="content">
                         <div className="option">
-                            <label>Width</label>
-                            <input type="number" min="0" name="width" />
+                            <div>Size</div>
+                            <div>
+                                <label>Width</label>
+                                <input type="number" min="0" name="width" />
 
-                            <input list="widthunits" placeholder="PX" />
-                            <datalist id="widthunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
+                                <input list="widthunits" placeholder="PX" />
+                                <datalist id="widthunits">
+                                    <option value="PX" />
+                                    <option value="%" />
+                                    <option value="EM" />
+                                    <option value="VW" />
+                                    <option value="VH" />
+                                    <option value="Auto" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label>Height</label>
+                                <input type="number" min="0" name="height" />
+
+                                <input list="heightunits" placeholder="PX" />
+                                <datalist id="heightunits">
+                                    <option value="PX" />
+                                    <option value="%" />
+                                    <option value="EM" />
+                                    <option value="VW" />
+                                    <option value="VH" />
+                                    <option value="Auto" />
+                                </datalist>
+                            </div>
                         </div>
                     </div>
-
-
-                    <div className="content">
-                        <div className="option">
-                            <label>Height</label>
-                            <input type="number" min="0" name="height" />
-
-                            <input list="heightunits" placeholder="PX" />
-                            <datalist id="heightunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                        </div>
-                    </div>
-
 
                     <div className="content">
                         <div className="option">
@@ -187,8 +185,8 @@ class Index extends Component {
                                     <option value="VH" />
                                     <option value="Auto" />
                                 </datalist>
-                            </div>
-                            <div>
+                                <br />
+
                                 <label>Margin-Right</label>
                                 <input type="number" min="0" name="marginRight" />
 
@@ -201,9 +199,8 @@ class Index extends Component {
                                     <option value="VH" />
                                     <option value="Auto" />
                                 </datalist>
+                                <br />
 
-                            </div>
-                            <div>
                                 <label>Margin-Top</label>
                                 <input type="number" min="0" name="marginTop" />
 
@@ -216,8 +213,8 @@ class Index extends Component {
                                     <option value="VH" />
                                     <option value="Auto" />
                                 </datalist>
-                            </div>
-                            <div>
+                                <br />
+
                                 <label>Margin-Bottom</label>
                                 <input type="number" min="0" name="marginBottom" />
 
@@ -361,7 +358,7 @@ class Index extends Component {
                     <div className="option-group">
                         <p className="option-group-label">
                             <span className="title">Layout</span>
-                            <span className="collapsed"></span>
+                            <span className="expanded"></span>
                         </p>
                         <div className="content">
                             <label>Display</label>
