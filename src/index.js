@@ -25,13 +25,13 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Background-color</label>
-                            <input type="color" min="0" name="color" />
+                            <input type="color" min="0" name="background-color" />
                         </div>
 
                         <div className="option">
                             <label>Size</label>
                             <input type="number" min="8" name="fontSize" />
-                            <input list="fontSizeunits" placeholder="PX" />
+                            <input list="fontSizeunits" placeholder="PX" name="font-size"/>
                             <datalist id="fontSizeunits">
                                 <option value="PX" />
                                 <option value="%" />
@@ -44,7 +44,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Type</label>
-                            <input list="fonts" />
+                            <input list="fonts" name="font-family"/>
                             <datalist id="fonts">
                                 <option value="Serif" />
                                 <option value="Sans-serif" />
@@ -55,7 +55,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Font-style</label>
-                            <input list="fontsStyle" />
+                            <input list="fontsStyle" name="font-style"/>
                             <datalist id="fontsStyle">
                                 <option value="Normal" />
                                 <option value="Ittalic" />
@@ -65,7 +65,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Font-weight</label>
-                            <input list="fontWeight" />
+                            <input list="fontWeight" name="font-weight"/>
                             <datalist id="fontWeight">
                                 <option value="normal" />
                                 <option value="bold" />
@@ -77,7 +77,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Text-Transform</label>
-                            <input list="textTransform" />
+                            <input list="textTransform" name="text-transform" />
                             <datalist id="textTransform">
                                 <option value="uppercase" />
                                 <option value="lowercase" />
@@ -88,7 +88,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Text-Decoration</label>
-                            <input list="textDecoration" />
+                            <input list="textDecoration" name="text-decoration"/>
                             <datalist id="textDecoration">
                                 <option value="underline" />
                                 <option value="overline" />
@@ -99,7 +99,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Text-Align</label>
-                            <input list="textAlign" />
+                            <input list="textAlign" name="text-align"/>
                             <datalist id="textAlign">
                                 <option value="left" />
                                 <option value="right" />
@@ -111,7 +111,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Letter spacing</label>
-                            <input type="number" min="8" name="fontSize" />
+                            <input type="number" min="8" name="letter-spacing" />
                             <input list="letterSpacing" placeholder="PX" />
                             <datalist id="letterSpacing">
                                 <option value="PX" />
@@ -121,7 +121,7 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Word spacing</label>
-                            <input type="number" min="8" name="fontSize" />
+                            <input type="number" min="8" name="word-spacing" />
                             <input list="wordSpacing" placeholder="PX" />
                             <datalist id="wordSpacing">
                                 <option value="PX" />
@@ -174,7 +174,7 @@ class Index extends Component {
                             <div>Margin</div>
                             <div>
                                 <label>Margin-Left</label>
-                                <input type="number" min="0" name="marginLeft" />
+                                <input type="number" min="0" name="margin-left" />
 
                                 <input list="marginLeftunits" placeholder="PX" />
                                 <datalist id="marginLeftunits">
@@ -188,7 +188,7 @@ class Index extends Component {
                                 <br />
 
                                 <label>Margin-Right</label>
-                                <input type="number" min="0" name="marginRight" />
+                                <input type="number" min="0" name="margin-right" />
 
                                 <input list="marginRightunits" placeholder="PX" />
                                 <datalist id="marginRightunits">
@@ -202,7 +202,7 @@ class Index extends Component {
                                 <br />
 
                                 <label>Margin-Top</label>
-                                <input type="number" min="0" name="marginTop" />
+                                <input type="number" min="0" name="margin-top" />
 
                                 <input list="marginTopunits" placeholder="PX" />
                                 <datalist id="marginTopunits">
@@ -216,7 +216,7 @@ class Index extends Component {
                                 <br />
 
                                 <label>Margin-Bottom</label>
-                                <input type="number" min="0" name="marginBottom" />
+                                <input type="number" min="0" name="margin-bottom" />
 
                                 <input list="marginBottomunits" placeholder="PX" />
                                 <datalist id="marginBottomunits">
@@ -236,7 +236,7 @@ class Index extends Component {
                                 <div>Padding</div>
                                 <div>
                                     <label>Padding-Left</label>
-                                    <input type="number" min="0" name="paddingLeft" />
+                                    <input type="number" min="0" name="padding-left" />
 
                                     <input list="paddingLeftunits" placeholder="PX" />
                                     <datalist id="paddingLeftunits">
@@ -249,7 +249,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Padding-Right</label>
-                                    <input type="number" min="0" name="paddingRight" />
+                                    <input type="number" min="0" name="padding-right" />
 
                                     <input list="paddingRightunits" placeholder="PX" />
                                     <datalist id="paddingRightunits">
@@ -262,7 +262,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Padding-Top</label>
-                                    <input type="number" min="0" name="paddingTop" />
+                                    <input type="number" min="0" name="padding-top" />
 
                                     <input list="paddingTopunits" placeholder="PX" />
                                     <datalist id="paddingTopunits">
@@ -275,7 +275,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Padding-Bottom</label>
-                                    <input type="number" min="0" name="paddingBottom" />
+                                    <input type="number" min="0" name="padding-bottom" />
 
                                     <input list="paddingBottomunits" placeholder="PX" />
                                     <datalist id="paddingBottomunits">
@@ -296,7 +296,7 @@ class Index extends Component {
                                 <div>Border</div>
                                 <div>
                                     <label>Border-Left</label>
-                                    <input type="number" min="0" name="borderLeft" />
+                                    <input type="number" min="0" name="border-left" />
 
                                     <input list="borderLeftunits" placeholder="PX" />
                                     <datalist id="borderLeftunits">
@@ -309,7 +309,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Border-Right</label>
-                                    <input type="number" min="0" name="borderRight" />
+                                    <input type="number" min="0" name="border-right" />
 
                                     <input list="borderRightunits" placeholder="PX" />
                                     <datalist id="borderRightunits">
@@ -322,7 +322,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Border-Top</label>
-                                    <input type="number" min="0" name="borderTop" />
+                                    <input type="number" min="0" name="border-top" />
 
                                     <input list="borderTopunits" placeholder="PX" />
                                     <datalist id="borderTopunits">
@@ -335,7 +335,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Border-Bottom</label>
-                                    <input type="number" min="0" name="borderBottom" />
+                                    <input type="number" min="0" name="border-bottom" />
 
                                     <input list="borderBottomunits" placeholder="PX" />
                                     <datalist id="borderBottomunits">
@@ -348,7 +348,7 @@ class Index extends Component {
                                     </datalist>
                                     <br />
                                     <label>Color</label>
-                                    <input type="color" name="borderColor" />
+                                    <input type="color" name="border-color" />
                                 </div>
                             </div>
                         </div>
