@@ -12,6 +12,7 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-inspector": "^2.3.1"

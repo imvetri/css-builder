@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box
+}
+
+input {
+    height: 26px;
+    width: 44px;
+}
