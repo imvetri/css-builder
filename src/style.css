@@ -3,8 +3,19 @@
 }
 
 input {
-    height: 26px;
-    width: 44px;
+    width: 50px;
+    min-height: 25px;
+    border-radius: 3px;
+    background-color: #41474C;
+    color: #FFF;
+    border: none;
+    font-size: 13px;
+    padding: 0 8px;
+}
+
+label {
+    font-size: 11px;
+    color: #B3BABD;
 }
 
 .option-group {
@@ -33,4 +44,13 @@ body {
     border-bottom-color: transparent;
     margin-top: 2px;
     float:right;
+}
+
+.content {
+    padding: 0 0 10px;
+}
+
+.option {
+    padding: 4px 0;
+    line-height: 24px;
 }
