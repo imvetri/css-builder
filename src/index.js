@@ -361,15 +361,17 @@ class Index extends Component {
                             <span className="panel expanded"></span>
                         </p>
                         <div className="content">
-                            <label>Display</label>
-                            <input list="display" name="display" />
+                            <div className="option">
+                                <label>Display</label>
+                                <input list="display" name="display" />
 
-                            <datalist id="display">
-                                <option value="inline" />
-                                <option value="block" />
-                                <option value="inline-block" />
-                                <option value="flex" />
-                            </datalist>
+                                <datalist id="display">
+                                    <option value="inline" />
+                                    <option value="block" />
+                                    <option value="inline-block" />
+                                    <option value="flex" />
+                                </datalist>
+                            </div>
                         </div>
                     </div>
                 </div>
