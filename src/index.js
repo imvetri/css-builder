@@ -31,7 +31,7 @@ class Index extends Component {
                         <div className="option">
                             <label>Size</label>
                             <input type="number" min="8" name="fontSize" />
-                            <input list="fontSizeunits" placeholder="PX"/>
+                            <input list="fontSizeunits" placeholder="PX" />
                             <datalist id="fontSizeunits">
                                 <option value="PX" />
                                 <option value="%" />
@@ -112,7 +112,7 @@ class Index extends Component {
                         <div className="option">
                             <label>Letter spacing</label>
                             <input type="number" min="8" name="fontSize" />
-                            <input list="letterSpacing" placeholder="PX"/>
+                            <input list="letterSpacing" placeholder="PX" />
                             <datalist id="letterSpacing">
                                 <option value="PX" />
                             </datalist>
@@ -122,7 +122,7 @@ class Index extends Component {
                         <div className="option">
                             <label>Word spacing</label>
                             <input type="number" min="8" name="fontSize" />
-                            <input list="wordSpacing" placeholder="PX"/>
+                            <input list="wordSpacing" placeholder="PX" />
                             <datalist id="wordSpacing">
                                 <option value="PX" />
                             </datalist>
@@ -155,7 +155,7 @@ class Index extends Component {
 
                     <div className="content">
                         <div className="option">
-                        <label>Height</label>
+                            <label>Height</label>
                             <input type="number" min="0" name="height" />
 
                             <input list="heightunits" placeholder="PX" />
@@ -173,206 +173,211 @@ class Index extends Component {
 
                     <div className="content">
                         <div className="option">
-                        <div>Margin</div>
-                        <label>Margin-Left</label>
-                        <input type="number" min="0" name="marginLeft" />
+                            <div>Margin</div>
+                            <div>
+                                <label>Margin-Left</label>
+                                <input type="number" min="0" name="marginLeft" />
 
-                        <input list="marginLeftunits" placeholder="PX" />
-                        <datalist id="marginLeftunits">
-                            <option value="PX" />
-                            <option value="%" />
-                            <option value="EM" />
-                            <option value="VW" />
-                            <option value="VH" />
-                            <option value="Auto" />
-                        </datalist>
-                        <br />
-                        <label>Margin-Right</label>
-                        <input type="number" min="0" name="marginRight" />
+                                <input list="marginLeftunits" placeholder="PX" />
+                                <datalist id="marginLeftunits">
+                                    <option value="PX" />
+                                    <option value="%" />
+                                    <option value="EM" />
+                                    <option value="VW" />
+                                    <option value="VH" />
+                                    <option value="Auto" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label>Margin-Right</label>
+                                <input type="number" min="0" name="marginRight" />
 
-                        <input list="marginRightunits" placeholder="PX" />
-                        <datalist id="marginRightunits">
-                            <option value="PX" />
-                            <option value="%" />
-                            <option value="EM" />
-                            <option value="VW" />
-                            <option value="VH" />
-                            <option value="Auto" />
-                        </datalist>
-                        <br />
-                        <label>Margin-Top</label>
-                        <input type="number" min="0" name="marginTop" />
+                                <input list="marginRightunits" placeholder="PX" />
+                                <datalist id="marginRightunits">
+                                    <option value="PX" />
+                                    <option value="%" />
+                                    <option value="EM" />
+                                    <option value="VW" />
+                                    <option value="VH" />
+                                    <option value="Auto" />
+                                </datalist>
 
-                        <input list="marginTopunits" placeholder="PX" />
-                        <datalist id="marginTopunits">
-                            <option value="PX" />
-                            <option value="%" />
-                            <option value="EM" />
-                            <option value="VW" />
-                            <option value="VH" />
-                            <option value="Auto" />
-                        </datalist>
-                        <br />
-                        <label>Margin-Bottom</label>
-                        <input type="number" min="0" name="marginBottom" />
+                            </div>
+                            <div>
+                                <label>Margin-Top</label>
+                                <input type="number" min="0" name="marginTop" />
 
-                        <input list="marginBottomunits" placeholder="PX" />
-                        <datalist id="marginBottomunits">
-                            <option value="PX" />
-                            <option value="%" />
-                            <option value="EM" />
-                            <option value="VW" />
-                            <option value="VH" />
-                            <option value="Auto" />
-                        </datalist>
+                                <input list="marginTopunits" placeholder="PX" />
+                                <datalist id="marginTopunits">
+                                    <option value="PX" />
+                                    <option value="%" />
+                                    <option value="EM" />
+                                    <option value="VW" />
+                                    <option value="VH" />
+                                    <option value="Auto" />
+                                </datalist>
+                            </div>
+                            <div>
+                                <label>Margin-Bottom</label>
+                                <input type="number" min="0" name="marginBottom" />
+
+                                <input list="marginBottomunits" placeholder="PX" />
+                                <datalist id="marginBottomunits">
+                                    <option value="PX" />
+                                    <option value="%" />
+                                    <option value="EM" />
+                                    <option value="VW" />
+                                    <option value="VH" />
+                                    <option value="Auto" />
+                                </datalist>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div className="content">
+                            <div className="option">
+                                <div>Padding</div>
+                                <div>
+                                    <label>Padding-Left</label>
+                                    <input type="number" min="0" name="paddingLeft" />
+
+                                    <input list="paddingLeftunits" placeholder="PX" />
+                                    <datalist id="paddingLeftunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Padding-Right</label>
+                                    <input type="number" min="0" name="paddingRight" />
+
+                                    <input list="paddingRightunits" placeholder="PX" />
+                                    <datalist id="paddingRightunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Padding-Top</label>
+                                    <input type="number" min="0" name="paddingTop" />
+
+                                    <input list="paddingTopunits" placeholder="PX" />
+                                    <datalist id="paddingTopunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Padding-Bottom</label>
+                                    <input type="number" min="0" name="paddingBottom" />
+
+                                    <input list="paddingBottomunits" placeholder="PX" />
+                                    <datalist id="paddingBottomunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className="content">
+                            <div className="option">
+                                <div>Border</div>
+                                <div>
+                                    <label>Border-Left</label>
+                                    <input type="number" min="0" name="borderLeft" />
+
+                                    <input list="borderLeftunits" placeholder="PX" />
+                                    <datalist id="borderLeftunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Border-Right</label>
+                                    <input type="number" min="0" name="borderRight" />
+
+                                    <input list="borderRightunits" placeholder="PX" />
+                                    <datalist id="borderRightunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Border-Top</label>
+                                    <input type="number" min="0" name="borderTop" />
+
+                                    <input list="borderTopunits" placeholder="PX" />
+                                    <datalist id="borderTopunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Border-Bottom</label>
+                                    <input type="number" min="0" name="borderBottom" />
+
+                                    <input list="borderBottomunits" placeholder="PX" />
+                                    <datalist id="borderBottomunits">
+                                        <option value="PX" />
+                                        <option value="%" />
+                                        <option value="EM" />
+                                        <option value="VW" />
+                                        <option value="VH" />
+                                        <option value="Auto" />
+                                    </datalist>
+                                    <br />
+                                    <label>Color</label>
+                                    <input type="color" name="borderColor" />
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
-                    <div className="content">
-                        <div className="option">
-                        <div>Padding</div>
-                        <div>
-                            <label>Padding-Left</label>
-                            <input type="number" min="0" name="paddingLeft" />
+                    <div className="option-group">
+                        <p className="option-group-label">
+                            <span className="title">Layout</span>
+                            <span className="collapsed"></span>
+                        </p>
+                        <div className="content">
+                            <label>Display</label>
+                            <input list="display" name="display" />
 
-                            <input list="paddingLeftunits" placeholder="PX" />
-                            <datalist id="paddingLeftunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
+                            <datalist id="display">
+                                <option value="inline" />
+                                <option value="block" />
+                                <option value="inline-block" />
+                                <option value="flex" />
                             </datalist>
-                            <br />
-                            <label>Padding-Right</label>
-                            <input type="number" min="0" name="paddingRight" />
-
-                            <input list="paddingRightunits" placeholder="PX"/>
-                            <datalist id="paddingRightunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                            <br />
-                            <label>Padding-Top</label>
-                            <input type="number" min="0" name="paddingTop" />
-
-                            <input list="paddingTopunits" placeholder="PX"/>
-                            <datalist id="paddingTopunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                            <br />
-                            <label>Padding-Bottom</label>
-                            <input type="number" min="0" name="paddingBottom" />
-
-                            <input list="paddingBottomunits" placeholder="PX"/>
-                            <datalist id="paddingBottomunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                        </div>
-                        </div>
-                    </div>
-
-
-                    <div className="content">
-                        <div className="option">
-                        <div>Border</div>
-                        <div>
-                            <label>Border-Left</label>
-                            <input type="number" min="0" name="borderLeft" />
-
-                            <input list="borderLeftunits" placeholder="PX"/>
-                            <datalist id="borderLeftunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                            <br />
-                            <label>Border-Right</label>
-                            <input type="number" min="0" name="borderRight" />
-
-                            <input list="borderRightunits" placeholder="PX" />
-                            <datalist id="borderRightunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                            <br />
-                            <label>Border-Top</label>
-                            <input type="number" min="0" name="borderTop" />
-
-                            <input list="borderTopunits" placeholder="PX" />
-                            <datalist id="borderTopunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                            <br />
-                            <label>Border-Bottom</label>
-                            <input type="number" min="0" name="borderBottom" />
-
-                            <input list="borderBottomunits" placeholder="PX" />
-                            <datalist id="borderBottomunits">
-                                <option value="PX" />
-                                <option value="%" />
-                                <option value="EM" />
-                                <option value="VW" />
-                                <option value="VH" />
-                                <option value="Auto" />
-                            </datalist>
-                            <br />
-                            <label>Color</label>
-                            <input type="color" name="borderColor" />
-                        </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div className="option-group">
-                    <p className="option-group-label">
-                        <span className="title">Layout</span>
-                        <span className="collapsed"></span>
-                    </p>
-                    <div className="content">
-                        <label>Display</label>
-                        <input list="display" name="display" />
-
-                        <datalist id="display">
-                            <option value="inline" />
-                            <option value="block" />
-                            <option value="inline-block" />
-                            <option value="flex" />
-                        </datalist>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-}
-
+                );
+            }
+        }
+        
 ReactDOM.render(<Index />, document.getElementById("index"));
