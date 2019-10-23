@@ -1,7 +1,7 @@
 module.exports = {
     devtool: 'inline-source-map',
     entry: {
-        entry: __dirname + '/src/index.js'
+        entry: __dirname + '/src/CssBuilder.js'
     },
     output: {
         filename: 'CssBuilder.js'
