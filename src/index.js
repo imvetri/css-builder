@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import "./style.css";
-import { colorChange, backgroundColorChange, fontSizeChange
+import { colorChange
+    ,backgroundColorChange
+    ,fontSizeChange
     ,fontFamilyChange
     ,fontStyleChange
     ,fontWeightChange
@@ -29,7 +31,7 @@ import { colorChange, backgroundColorChange, fontSizeChange
     ,displayChange
     } from "./reducer";
 
-class Index extends Component {
+class CssBuilder extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -79,13 +81,13 @@ class Index extends Component {
 
                         <div className="option">
                             <label>Background-color</label>
-                            <input type="color" value={this.state['backgroud-color']} onChange={backgroundColorChange.bind(this)} min="0" name="background-color" />
+                            <input type="color" value={this.state['background-color']} onChange={backgroundColorChange.bind(this)} name="background-color" />
                         </div>
 
                         <div className="option">
                             <label>Size</label>
-                            <input type="number" min="8" name="fontSize" />
-                            <input list="fontSizeunits" placeholder="PX" name="font-size" value={this.state['font-size']} onChange={fontSizeChange.bind(this)}/>
+                            <input type="number" min="8" name="fontSize"  value={this.state['font-size']} onChange={fontSizeChange.bind(this)} />
+                            <input list="fontSizeunits" value="PX" name="font-size"/>
                             <datalist id="fontSizeunits">
                                 <option value="PX" />
                                 <option value="%" />
@@ -166,7 +168,7 @@ class Index extends Component {
                         <div className="option">
                             <label>Letter spacing</label>
                             <input type="number" min="8" name="letter-spacing" value={this.state["letter-spacing"]} onChange={letterSpacingChange.bind(this)}/>
-                            <input list="letterSpacing" placeholder="PX" />
+                            <input list="letterSpacing" value="PX" />
                             <datalist id="letterSpacing">
                                 <option value="PX" />
                             </datalist>
@@ -176,7 +178,7 @@ class Index extends Component {
                         <div className="option">
                             <label>Word spacing</label>
                             <input type="number" min="8" name="word-spacing" value={this.state["word-spacing"]} onChange={wordSpacingChange.bind(this)}/>
-                            <input list="wordSpacing" placeholder="PX" />
+                            <input list="wordSpacing" value="PX" />
                             <datalist id="wordSpacing">
                                 <option value="PX" />
                             </datalist>
@@ -196,7 +198,7 @@ class Index extends Component {
                                 <label>Width</label>
                                 <input type="number" min="0" name="width" value={this.state.width} onChange={widthChange.bind(this)}/>
 
-                                <input list="widthunits" placeholder="PX" />
+                                <input list="widthunits" value="PX" />
                                 <datalist id="widthunits">
                                     <option value="PX" />
                                     <option value="%" />
@@ -210,7 +212,7 @@ class Index extends Component {
                                 <label>Height</label>
                                 <input type="number" min="0" name="height" value={this.state.height} onChange={heightChange.bind(this)}/>
 
-                                <input list="heightunits" placeholder="PX" />
+                                <input list="heightunits" value="PX" />
                                 <datalist id="heightunits">
                                     <option value="PX" />
                                     <option value="%" />
@@ -230,7 +232,7 @@ class Index extends Component {
                                 <label>Margin-Left</label>
                                 <input type="number" min="0" name="margin-left" value={this.state["margin-left"]} onChange={marginLeftChange.bind(this)} />
 
-                                <input list="marginLeftunits" placeholder="PX" />
+                                <input list="marginLeftunits" value="PX" />
                                 <datalist id="marginLeftunits">
                                     <option value="PX" />
                                     <option value="%" />
@@ -244,7 +246,7 @@ class Index extends Component {
                                 <label>Margin-Right</label>
                                 <input type="number" min="0" name="margin-right" value={this.state["margin-right"]} onChange={marginRightChange.bind(this)} />
 
-                                <input list="marginRightunits" placeholder="PX" />
+                                <input list="marginRightunits" value="PX" />
                                 <datalist id="marginRightunits">
                                     <option value="PX" />
                                     <option value="%" />
@@ -258,7 +260,7 @@ class Index extends Component {
                                 <label>Margin-Top</label>
                                 <input type="number" min="0" name="margin-top" value={this.state["margin-top"]} onChange={marginTopChange.bind(this)} />
 
-                                <input list="marginTopunits" placeholder="PX" />
+                                <input list="marginTopunits" value="PX" />
                                 <datalist id="marginTopunits">
                                     <option value="PX" />
                                     <option value="%" />
@@ -272,7 +274,7 @@ class Index extends Component {
                                 <label>Margin-Bottom</label>
                                 <input type="number" min="0" name="margin-bottom" value={this.state["margin-bottom"]} onChange={marginBottomChange.bind(this)} />
 
-                                <input list="marginBottomunits" placeholder="PX" />
+                                <input list="marginBottomunits" value="PX" />
                                 <datalist id="marginBottomunits">
                                     <option value="PX" />
                                     <option value="%" />
@@ -292,7 +294,7 @@ class Index extends Component {
                                     <label>Padding-Left</label>
                                     <input type="number" min="0" name="padding-left" value={this.state["padding-left"]} onChange={paddingLeftChange.bind(this)} />
 
-                                    <input list="paddingLeftunits" placeholder="PX" />
+                                    <input list="paddingLeftunits" value="PX" />
                                     <datalist id="paddingLeftunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -305,7 +307,7 @@ class Index extends Component {
                                     <label>Padding-Right</label>
                                     <input type="number" min="0" name="padding-right" value={this.state["padding-right"]} onChange={paddingRightChange.bind(this)}  />
 
-                                    <input list="paddingRightunits" placeholder="PX" />
+                                    <input list="paddingRightunits" value="PX" />
                                     <datalist id="paddingRightunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -318,7 +320,7 @@ class Index extends Component {
                                     <label>Padding-Top</label>
                                     <input type="number" min="0" name="padding-top" value={this.state["padding-top"]} onChange={paddingTopChange.bind(this)} />
 
-                                    <input list="paddingTopunits" placeholder="PX" />
+                                    <input list="paddingTopunits" value="PX" />
                                     <datalist id="paddingTopunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -331,7 +333,7 @@ class Index extends Component {
                                     <label>Padding-Bottom</label>
                                     <input type="number" min="0" name="padding-bottom" value={this.state["padding-bottom"]} onChange={paddingBottomChange.bind(this)} />
 
-                                    <input list="paddingBottomunits" placeholder="PX" />
+                                    <input list="paddingBottomunits" value="PX" />
                                     <datalist id="paddingBottomunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -352,7 +354,7 @@ class Index extends Component {
                                     <label>Border-Left</label>
                                     <input type="number" min="0" name="border-left" value={this.state["border-left"]} onChange={borderLeftChange.bind(this)}  />
 
-                                    <input list="borderLeftunits" placeholder="PX" />
+                                    <input list="borderLeftunits" value="PX" />
                                     <datalist id="borderLeftunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -365,7 +367,7 @@ class Index extends Component {
                                     <label>Border-Right</label>
                                     <input type="number" min="0" name="border-right" value={this.state["border-right"]} onChange={borderRightChange.bind(this)}   />
 
-                                    <input list="borderRightunits" placeholder="PX" />
+                                    <input list="borderRightunits" value="PX" />
                                     <datalist id="borderRightunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -378,7 +380,7 @@ class Index extends Component {
                                     <label>Border-Top</label>
                                     <input type="number" min="0" name="border-top" value={this.state["border-top"]} onChange={borderTopChange.bind(this)}   />
 
-                                    <input list="borderTopunits" placeholder="PX" />
+                                    <input list="borderTopunits" value="PX" />
                                     <datalist id="borderTopunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -391,7 +393,7 @@ class Index extends Component {
                                     <label>Border-Bottom</label>
                                     <input type="number" min="0" name="border-bottom" value={this.state["border-bottom"]} onChange={borderBottomChange.bind(this)}  />
 
-                                    <input list="borderBottomunits" placeholder="PX" />
+                                    <input list="borderBottomunits" value="PX" />
                                     <datalist id="borderBottomunits">
                                         <option value="PX" />
                                         <option value="%" />
@@ -430,7 +432,11 @@ class Index extends Component {
                     </div>
                 </div>
                 );
-            }
-        }
+    }
+}
+
+function cssChanged(state, change){
+    console.log(state, change);
+}
         
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<CssBuilder onChange={cssChanged}/>, document.getElementById("index"));
