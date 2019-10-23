@@ -1,6 +1,6 @@
 {
   "name": "css-ssc",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "css generator component builder",
   "main": "dist/CssBuilder.js",
   "repository": {
