@@ -438,5 +438,8 @@ class CssBuilder extends Component {
 function cssChanged(state, change){
     console.log(state, change);
 }
-        
+
+export default CssBuilder;
+
+// Usage Example //
 ReactDOM.render(<CssBuilder onChange={cssChanged}/>, document.getElementById("index"));
